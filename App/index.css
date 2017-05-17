@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans');
+html{
+
+  font-size: 10px;
+}
+html body{
+
+  font-size:1.6em;
+  background: #f5f5f5 !important;
+}
+.site-content-contain{
+  background: #f5f5f5 !important;
+}
+body.page-two-column:not(.archive) #primary .entry-content{
+  width: 100% !important;
+}
+.popular-item {
+  display: inline-block;
+  width: 45%;
+  margin: 20px;
+}
+.slider-container {
+  border-radius: 7px;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  padding: 20px 28px;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #8c8c8c;
+}
+.slider-container:after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 7px;
+  width: 64px;
+  height: 56px;
+  background: url(https://wpbrigade.com/wp-content/themes/wp-brigade/img/comments.png) no-repeat 0 0;
+}
+.item-description h2{
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 1.1;
+  font-family: 'Nunito', sans-serif;
+  color: #3c4555;
+  margin: 0 0 10px;
+}
+.rating {
+  content: "";
+  width: 151px;
+  height: 23px;
+  margin: 0 auto 10px;
+  display: block;
+  position: relative;
+}
+.rating:after{
+  content: '';
+  background: url(https://wpbrigade.com/wp-content/themes/wp-brigade/img/stars.png) no-repeat 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.rating:before{
+  content: '';
+  background: url(https://wpbrigade.com/wp-content/themes/wp-brigade/img/stars.png) no-repeat 0 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .3;
+}
+.star-1:after{
+
+  width: 24px;
+}
+.star-2:after{
+  width: 55px;
+}
+.star-3:after{
+  width: 90px;
+}
+.star-4:after{
+  width: 119px;
+}
+.testimonial_by:after {
+  position: absolute;
+  top: -1px;
+  left: 39px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 15px;
+  border-color: #ffffff transparent transparent transparent;
+}
+.avator {
+  width: 70px;
+  height: 70px;
+  background-color: #ccc;
+  border: 5px solid #fff;
+  display: block;
+  float: left;
+  border-radius: 100px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.testimonial_by_name{
+  overflow: hidden;
+}
+.testimonial_by {
+  padding: 20px 20px 20px 20px;
+  text-align: left;
+  position: relative;
+}
+.name_t {
+  display: block;
+  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+}
+.name_a {
+  display: block;
+  opacity: .5;
+}
+.plugin-search{
+
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+}
+.plugin-search button[type="submit"]{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  font-size: 0;
+  left: 10px;
+  line-height: 0;
+  text-indent: 100%;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  color: transparent;
+}
+.plugin-search button[type="submit"]:focus{
+
+  outline: none;
+}
+.plugin-search button[type="submit"]:after{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #7b7b7b;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+.plugin-search button[type="submit"]:before{
+  height: 2px;
+  position: absolute;
+  bottom: 7px;
+  right: 0px;
+  content: '';
+  width: 9px;
+  background: #828282;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+}
+.plugin-search input[type="text"]{
+
+  border:0;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+.not-found-plugin{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: red;
+}
+@media screen and (max-width: 1000px){
+  .popular-item {
+    width: auto;
+    margin: 20px auto;
+    max-width: 600px;
+    display: block;
+  }
+}
